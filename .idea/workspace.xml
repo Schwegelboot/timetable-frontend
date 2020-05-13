@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="260478f3-3ee2-48ff-8667-8cd17fdaa5da" name="Default Changelist" comment="">
+    <list default="true" id="260478f3-3ee2-48ff-8667-8cd17fdaa5da" name="Default Changelist" comment="Initial Commit">
+      <change afterPath="$PROJECT_DIR$/src/components/DeleteDataService.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CreateDataService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CreateDataService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/FetchDataService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FetchDataService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MyCalendar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MyCalendar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,7 +38,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Fallstudie/timetable-frontend" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Fallstudie/timetable/pom.xml" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -82,11 +87,17 @@
       <workItem from="1589272571927" duration="20185000" />
       <workItem from="1589316843125" duration="1900000" />
       <workItem from="1589318776335" duration="42000" />
+      <workItem from="1589318978299" duration="747000" />
+      <workItem from="1589361099574" duration="22815000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial Commit" />
   </component>
   <component name="WindowStateProjectService">
     <state x="343" y="142" key="#ESLint" timestamp="1589308645934">
@@ -101,14 +112,18 @@
       <screen x="0" y="0" width="1500" height="960" />
     </state>
     <state x="343" y="142" width="812" height="721" key="#Intentions/0.0.1500.960@0.0.1500.960" timestamp="1589055351644" />
-    <state x="481" y="230" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1589309374117">
+    <state x="481" y="230" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1589378863720">
       <screen x="0" y="0" width="1500" height="960" />
     </state>
-    <state x="481" y="230" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1500.960@0.0.1500.960" timestamp="1589309374117" />
-    <state x="531" y="238" key="FileChooserDialogImpl" timestamp="1589318789784">
+    <state x="481" y="230" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1500.960@0.0.1500.960" timestamp="1589378863720" />
+    <state x="250" y="79" key="CommitChangelistDialog2" timestamp="1589396950012">
       <screen x="0" y="0" width="1500" height="960" />
     </state>
-    <state x="531" y="238" key="FileChooserDialogImpl/0.0.1500.960@0.0.1500.960" timestamp="1589318789784" />
+    <state x="250" y="79" key="CommitChangelistDialog2/0.0.1500.960@0.0.1500.960" timestamp="1589396950012" />
+    <state x="531" y="238" key="FileChooserDialogImpl" timestamp="1589396604791">
+      <screen x="0" y="0" width="1500" height="960" />
+    </state>
+    <state x="531" y="238" key="FileChooserDialogImpl/0.0.1500.960@0.0.1500.960" timestamp="1589396604791" />
     <state width="1458" height="255" key="GridCell.Tab.0.bottom" timestamp="1589298468574">
       <screen x="0" y="0" width="1500" height="960" />
     </state>
@@ -185,10 +200,10 @@
       <screen x="0" y="0" width="1500" height="960" />
     </state>
     <state x="343" y="216" key="Vcs.Push.Dialog.v2/0.0.1500.960@0.0.1500.960" timestamp="1589317547418" />
-    <state x="458" y="308" key="com.intellij.ide.util.TipDialog" timestamp="1589318775725">
+    <state x="458" y="308" key="com.intellij.ide.util.TipDialog" timestamp="1589361099566">
       <screen x="0" y="0" width="1500" height="960" />
     </state>
-    <state x="458" y="308" key="com.intellij.ide.util.TipDialog/0.0.1500.960@0.0.1500.960" timestamp="1589318775725" />
+    <state x="458" y="308" key="com.intellij.ide.util.TipDialog/0.0.1500.960@0.0.1500.960" timestamp="1589361099566" />
     <state x="560" y="399" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1589317509996">
       <screen x="0" y="0" width="1500" height="960" />
     </state>

@@ -1,5 +1,5 @@
-import React, {Component, Fragment} from "react";
-import {useAuth0} from "../react-auth0-spa";
+import React, {Component, Fragment, useContext} from "react";
+
 
 import {Calendar, components, momentLocalizer} from "react-big-calendar";
 import moment from "moment";
@@ -8,6 +8,8 @@ import "react-big-calendar/lib/css/react-big-calendar.css";
 import 'moment/locale/de';
 import FetchDataService from "./FetchDataService";
 import CreateDataService from "./CreateDataService";
+import { useAuth0 } from "../react-auth0-spa";
+import Axios from "axios";
 
 const localizer = momentLocalizer(moment);
 moment.locale('de');
@@ -22,11 +24,12 @@ class MyCalendar extends Component {
         super(props);
         this.state = {
             cal_events: [],
-            timeslotId: String
+            timeslotId: String,
+            userId: String
         }
     }
 
-    handleSelect = ({ start, end }) => {
+     handleSelect = ({ start, end }) => {
         const title = window.prompt('Enter the title for a new calendar entry')
         if (title){
             this.setState({
@@ -39,18 +42,44 @@ class MyCalendar extends Component {
                     },
                 ],
             });
-           this.createDataService.createLecture(title, start, end);
+           this.createDataService.createLecture(title, start, end, this.state.userId);
         }
     };
+//-----------------------------------------------------------------------------------------------------
 
-    async componentDidMount() {
-        await this.fetchDataService.fetchTimeslotId()
+//Clicking an existing event allows you to remove it
+onSelectEvent(pEvent) {
+    const r = window.confirm("Would you like to remove this event?");
+    if(r === true){
+
+        this.setState((prevState, props) => {
+            const events = [prevState.events];
+            const idx = events.indexOf(pEvent);
+            events.splice(idx, 1);
+            Axios.delete()
+            return { events };
+        });
+    }
+}
+
+
+
+//-----------------------------------------------------------------------------------------------------
+
+     componentDidMount() {
+        this.fetchDataService.fetchTimeslotId()
             .then(timeslotId => {
                 this.fetchDataService.fetchLectureByTimeslotId(timeslotId)
                     .then(events => {
-                        this.setState({
-                            cal_events: events,
-                            timeslotId: timeslotId
+                        events.map(element=>{
+                            element.start= moment.utc(element.start).toDate();
+                            element.end= moment.utc(element.end).toDate();
+                            return element;
+                        }).map(eventList =>{
+                            this.setState({
+                                cal_events: events,
+                                timeslotId: timeslotId
+                            });
                         });
                     });
             });
@@ -63,6 +92,7 @@ class MyCalendar extends Component {
                 <p>
                     Timeslot: {this.state.timeslotId}
                 </p>
+                <button onClick={this.fetchProfile}>fetchProfile</button>
                 <div style={{height: '500pt'}}>
                     <Calendar
                         events={cal_events}
@@ -80,6 +110,9 @@ class MyCalendar extends Component {
                         selectable
                         onSelectEvent={event => alert(event.title)}
                         onSelectSlot={this.handleSelect}
+
+                        onSelectEvent = {event2 => this.onSelectEvent(event2)} //Fires selecting existing event
+
                     />
                 </div>
             </div>
@@ -104,18 +137,6 @@ function EventAgenda({event}) {
             </span>
     );
 }
-
-/* return (
-      <Fragment>
-          <img src={user.picture} alt="Profile" />
-
-          <h2>{user.name}</h2>
-          <p>{user.email}</p>
-          <code>{JSON.stringify(user, null, 2)}</code>
-      </Fragment>
-  );
-};
-*/
 MyCalendar.propTypes = propTypes;
 
 export default MyCalendar;

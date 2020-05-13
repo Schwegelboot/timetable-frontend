@@ -6,9 +6,11 @@ import {Calendar, momentLocalizer} from "react-big-calendar";
 const localizer = momentLocalizer(moment);
 moment.locale('de');
 
-class CreateDataService extends Component {
-    async createLecture(title, start, end, userId) {
-        return Axios.post("http://localhost:8080/lecture/create", {
+class DeleteDataService extends Component {
+    async deleteLecture(lectureID) {
+        return Axios.delete("http://localhost:8080/lecture/delete", {
+            lectureID: lectureID,
+
             name: title,
             lecturerID: userId,    // userId,
             course: "WWI14B4",
@@ -23,4 +25,4 @@ class CreateDataService extends Component {
     };
 }
 
-export default CreateDataService;
+export default DeleteDataService;

@@ -2,7 +2,9 @@ import React, {Component} from "react";
 import Axios from "axios";
 import MyCalendar from "./MyCalendar";
 import moment from "moment";
-import {Calendar} from "react-big-calendar";
+import {Calendar, momentLocalizer} from "react-big-calendar";
+const localizer = momentLocalizer(moment);
+moment.locale('de');
 
 class FetchDataService extends Component {
     async fetchTimeslotId() {
@@ -22,8 +24,8 @@ class FetchDataService extends Component {
                 return response.data.map(item => {
                     return {
                         title: item.name,
-                        start: moment().toDate(),
-                        end: moment().toDate(),
+                        start: item.startTime,
+                        end: item.endTime,
                         desc: item.course,
                         id: item.lecturerID
                     };
