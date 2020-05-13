@@ -1,13 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="260478f3-3ee2-48ff-8667-8cd17fdaa5da" name="Default Changelist" comment="Initial Commit">
-      <change afterPath="$PROJECT_DIR$/src/components/DeleteDataService.js" afterDir="false" />
+    <list default="true" id="260478f3-3ee2-48ff-8667-8cd17fdaa5da" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CreateDataService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CreateDataService.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/FetchDataService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FetchDataService.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MyCalendar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MyCalendar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +23,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1bgNksNvLK20TpweZ6ymxvDrj12" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -38,7 +34,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Fallstudie/timetable/pom.xml" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Fallstudie/TimetableRepo" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -47,6 +43,9 @@
     <property name="node.js.selected.package.standard" value="" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\IntelliJ IDEA 2019.3.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
@@ -88,8 +87,16 @@
       <workItem from="1589316843125" duration="1900000" />
       <workItem from="1589318776335" duration="42000" />
       <workItem from="1589318978299" duration="747000" />
-      <workItem from="1589361099574" duration="22815000" />
+      <workItem from="1589361099574" duration="23139000" />
     </task>
+    <task id="LOCAL-00001" summary="Initial Commit">
+      <created>1589396984455</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1589396984455</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -112,18 +119,22 @@
       <screen x="0" y="0" width="1500" height="960" />
     </state>
     <state x="343" y="142" width="812" height="721" key="#Intentions/0.0.1500.960@0.0.1500.960" timestamp="1589055351644" />
+    <state x="343" y="142" key="#Notifications" timestamp="1589397202311">
+      <screen x="0" y="0" width="1500" height="960" />
+    </state>
+    <state x="343" y="142" key="#Notifications/0.0.1500.960@0.0.1500.960" timestamp="1589397202311" />
     <state x="481" y="230" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1589378863720">
       <screen x="0" y="0" width="1500" height="960" />
     </state>
     <state x="481" y="230" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1500.960@0.0.1500.960" timestamp="1589378863720" />
-    <state x="250" y="79" key="CommitChangelistDialog2" timestamp="1589396950012">
+    <state x="250" y="79" key="CommitChangelistDialog2" timestamp="1589396983330">
       <screen x="0" y="0" width="1500" height="960" />
     </state>
-    <state x="250" y="79" key="CommitChangelistDialog2/0.0.1500.960@0.0.1500.960" timestamp="1589396950012" />
-    <state x="531" y="238" key="FileChooserDialogImpl" timestamp="1589396604791">
+    <state x="250" y="79" key="CommitChangelistDialog2/0.0.1500.960@0.0.1500.960" timestamp="1589396983330" />
+    <state x="531" y="238" key="FileChooserDialogImpl" timestamp="1589397294879">
       <screen x="0" y="0" width="1500" height="960" />
     </state>
-    <state x="531" y="238" key="FileChooserDialogImpl/0.0.1500.960@0.0.1500.960" timestamp="1589396604791" />
+    <state x="531" y="238" key="FileChooserDialogImpl/0.0.1500.960@0.0.1500.960" timestamp="1589397294879" />
     <state width="1458" height="255" key="GridCell.Tab.0.bottom" timestamp="1589298468574">
       <screen x="0" y="0" width="1500" height="960" />
     </state>
@@ -188,18 +199,22 @@
       <screen x="0" y="0" width="1500" height="960" />
     </state>
     <state width="1458" height="316" key="GridCell.Tab.3.right/0.0.1500.960@0.0.1500.960" timestamp="1589101886636" />
+    <state x="331" y="226" key="IDE.errors.dialog" timestamp="1589397063924">
+      <screen x="0" y="0" width="1500" height="960" />
+    </state>
+    <state x="331" y="226" key="IDE.errors.dialog/0.0.1500.960@0.0.1500.960" timestamp="1589397063924" />
     <state x="444" y="194" key="RollbackChangesDialog" timestamp="1589313472398">
       <screen x="0" y="0" width="1500" height="960" />
     </state>
     <state x="444" y="194" key="RollbackChangesDialog/0.0.1500.960@0.0.1500.960" timestamp="1589313472398" />
-    <state x="254" y="126" key="SettingsEditor" timestamp="1589113148592">
+    <state x="254" y="117" key="SettingsEditor" timestamp="1589397047527">
       <screen x="0" y="0" width="1500" height="960" />
     </state>
-    <state x="254" y="126" key="SettingsEditor/0.0.1500.960@0.0.1500.960" timestamp="1589113148592" />
-    <state x="343" y="216" key="Vcs.Push.Dialog.v2" timestamp="1589317547418">
+    <state x="254" y="117" key="SettingsEditor/0.0.1500.960@0.0.1500.960" timestamp="1589397047527" />
+    <state x="343" y="216" key="Vcs.Push.Dialog.v2" timestamp="1589397192551">
       <screen x="0" y="0" width="1500" height="960" />
     </state>
-    <state x="343" y="216" key="Vcs.Push.Dialog.v2/0.0.1500.960@0.0.1500.960" timestamp="1589317547418" />
+    <state x="343" y="216" key="Vcs.Push.Dialog.v2/0.0.1500.960@0.0.1500.960" timestamp="1589397192551" />
     <state x="458" y="308" key="com.intellij.ide.util.TipDialog" timestamp="1589361099566">
       <screen x="0" y="0" width="1500" height="960" />
     </state>
@@ -212,6 +227,10 @@
       <screen x="0" y="0" width="1500" height="960" />
     </state>
     <state x="175" y="208" key="new project wizard/0.0.1500.960@0.0.1500.960" timestamp="1589206734843" />
+    <state x="409" y="222" key="run.anything.popup" timestamp="1589397056672">
+      <screen x="0" y="0" width="1500" height="960" />
+    </state>
+    <state x="409" y="222" key="run.anything.popup/0.0.1500.960@0.0.1500.960" timestamp="1589397056672" />
     <state x="418" y="210" width="672" height="678" key="search.everywhere.popup" timestamp="1589309599706">
       <screen x="0" y="0" width="1500" height="960" />
     </state>
