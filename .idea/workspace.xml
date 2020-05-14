@@ -1,14 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="260478f3-3ee2-48ff-8667-8cd17fdaa5da" name="Default Changelist" comment="Initial Commit">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="260478f3-3ee2-48ff-8667-8cd17fdaa5da" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CreateDataService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CreateDataService.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/DeleteDataService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DeleteDataService.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/FetchDataService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FetchDataService.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MyCalendar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MyCalendar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/NavBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavBar.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +21,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="ca996376-4d8d-4d5b-b05e-2499892a5422" />
   </component>
   <component name="ProjectId" id="1bgNksNvLK20TpweZ6ymxvDrj12" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -95,7 +92,7 @@
       <workItem from="1589318978299" duration="747000" />
       <workItem from="1589361099574" duration="27837000" />
       <workItem from="1589445267208" duration="19000" />
-      <workItem from="1589445923203" duration="885000" />
+      <workItem from="1589445923203" duration="1537000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1589396984455</created>
@@ -111,7 +108,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589397320528</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Initial Commit">
+      <created>1589446842429</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1589446842429</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -162,18 +166,18 @@
       <screen x="0" y="0" width="1500" height="960" />
     </state>
     <state x="481" y="230" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1500.960@0.0.1500.960" timestamp="1589378863720" />
-    <state x="250" y="79" key="CommitChangelistDialog2" timestamp="1589446669756">
+    <state x="250" y="79" key="CommitChangelistDialog2" timestamp="1589446840487">
       <screen x="0" y="0" width="1500" height="960" />
     </state>
-    <state x="250" y="79" key="CommitChangelistDialog2/0.0.1500.960@0.0.1500.960" timestamp="1589446669756" />
+    <state x="250" y="79" key="CommitChangelistDialog2/0.0.1500.960@0.0.1500.960" timestamp="1589446840487" />
     <state x="531" y="238" key="FileChooserDialogImpl" timestamp="1589446801490">
       <screen x="0" y="0" width="1500" height="960" />
     </state>
     <state x="531" y="238" key="FileChooserDialogImpl/0.0.1500.960@0.0.1500.960" timestamp="1589446801490" />
-    <state x="606" y="379" key="Github.ShareDialog" timestamp="1589398359435">
+    <state x="606" y="379" key="Github.ShareDialog" timestamp="1589450082009">
       <screen x="0" y="0" width="1500" height="960" />
     </state>
-    <state x="606" y="379" key="Github.ShareDialog/0.0.1500.960@0.0.1500.960" timestamp="1589398359435" />
+    <state x="606" y="379" key="Github.ShareDialog/0.0.1500.960@0.0.1500.960" timestamp="1589450082009" />
     <state width="1458" height="255" key="GridCell.Tab.0.bottom" timestamp="1589298468574">
       <screen x="0" y="0" width="1500" height="960" />
     </state>
@@ -246,18 +250,18 @@
       <screen x="0" y="0" width="1500" height="960" />
     </state>
     <state x="444" y="194" key="RollbackChangesDialog/0.0.1500.960@0.0.1500.960" timestamp="1589313472398" />
-    <state x="254" y="117" key="SettingsEditor" timestamp="1589446352790">
+    <state x="254" y="117" key="SettingsEditor" timestamp="1589449863451">
       <screen x="0" y="0" width="1500" height="960" />
     </state>
-    <state x="254" y="117" key="SettingsEditor/0.0.1500.960@0.0.1500.960" timestamp="1589446352790" />
+    <state x="254" y="117" key="SettingsEditor/0.0.1500.960@0.0.1500.960" timestamp="1589449863451" />
     <state x="581" y="353" key="VCS.EditChangelistDialog" timestamp="1589446524494">
       <screen x="0" y="0" width="1500" height="960" />
     </state>
     <state x="581" y="353" key="VCS.EditChangelistDialog/0.0.1500.960@0.0.1500.960" timestamp="1589446524494" />
-    <state x="343" y="216" key="Vcs.Push.Dialog.v2" timestamp="1589397442204">
+    <state x="343" y="216" key="Vcs.Push.Dialog.v2" timestamp="1589446874122">
       <screen x="0" y="0" width="1500" height="960" />
     </state>
-    <state x="343" y="216" key="Vcs.Push.Dialog.v2/0.0.1500.960@0.0.1500.960" timestamp="1589397442204" />
+    <state x="343" y="216" key="Vcs.Push.Dialog.v2/0.0.1500.960@0.0.1500.960" timestamp="1589446874122" />
     <state x="458" y="308" key="com.intellij.ide.util.TipDialog" timestamp="1589361099566">
       <screen x="0" y="0" width="1500" height="960" />
     </state>
