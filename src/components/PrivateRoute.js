@@ -5,7 +5,6 @@ import { Route } from "react-router-dom";
 import { useAuth0 } from "../react-auth0-spa";
 import { Calendar, momentLocalizer } from "react-big-calendar";
 import moment from "moment";
-import CustomCalendar from "./CustomCalendar";
 
 const PrivateRoute = ({ component: Component, path, ...rest }) => {
     const { loading, isAuthenticated, loginWithRedirect } = useAuth0();

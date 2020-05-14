@@ -1,6 +1,5 @@
 import React, {Component} from "react";
 import Axios from "axios";
-import MyCalendar from "./MyCalendar";
 import moment from "moment";
 import {Calendar, momentLocalizer} from "react-big-calendar";
 const localizer = momentLocalizer(moment);

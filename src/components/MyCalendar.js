@@ -9,8 +9,8 @@ import 'moment/locale/de';
 import FetchDataService from "./FetchDataService";
 import CreateDataService from "./CreateDataService";
 import {Auth0Context, useAuth0} from "../react-auth0-spa";
-import Axios from "axios";
 import DeleteDataService from "./DeleteDataService";
+import 'typeface-roboto';
 
 const localizer = momentLocalizer(moment);
 moment.locale('de');
@@ -97,7 +97,6 @@ onSelectEvent(pEvent) {
                 <p>
                     Timeslot: {this.state.timeslotId}
                 </p>
-                <button onClick={this.fetchProfile}>fetchProfile</button>
                 <div style={{height: '500pt'}}>
                     <Calendar
                         events={cal_events}
