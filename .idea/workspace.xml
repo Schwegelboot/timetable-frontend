@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="260478f3-3ee2-48ff-8667-8cd17fdaa5da" name="Default Changelist" comment="">
+    <list default="true" id="260478f3-3ee2-48ff-8667-8cd17fdaa5da" name="Default Changelist" comment="Initial Commit">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CreateDataService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CreateDataService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/DeleteDataService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DeleteDataService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/FetchDataService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FetchDataService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MyCalendar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MyCalendar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/NavBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavBar.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +40,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Fallstudie/TimetableRepo" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -46,7 +52,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\IntelliJ IDEA 2019.3.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
@@ -87,7 +93,9 @@
       <workItem from="1589316843125" duration="1900000" />
       <workItem from="1589318776335" duration="42000" />
       <workItem from="1589318978299" duration="747000" />
-      <workItem from="1589361099574" duration="23139000" />
+      <workItem from="1589361099574" duration="27837000" />
+      <workItem from="1589445267208" duration="19000" />
+      <workItem from="1589445923203" duration="885000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1589396984455</created>
@@ -96,13 +104,40 @@
       <option name="project" value="LOCAL" />
       <updated>1589396984455</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Initial Commit">
+      <created>1589397320528</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1589397320528</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="SHOW_OTHER_BRANCHES" value="true" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+      <path value="$PROJECT_DIR$/../Fallstudie/TimetableRepo" />
+    </ignored-roots>
     <MESSAGE value="Initial Commit" />
     <option name="LAST_COMMIT_MESSAGE" value="Initial Commit" />
   </component>
@@ -127,14 +162,18 @@
       <screen x="0" y="0" width="1500" height="960" />
     </state>
     <state x="481" y="230" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1500.960@0.0.1500.960" timestamp="1589378863720" />
-    <state x="250" y="79" key="CommitChangelistDialog2" timestamp="1589396983330">
+    <state x="250" y="79" key="CommitChangelistDialog2" timestamp="1589446669756">
       <screen x="0" y="0" width="1500" height="960" />
     </state>
-    <state x="250" y="79" key="CommitChangelistDialog2/0.0.1500.960@0.0.1500.960" timestamp="1589396983330" />
-    <state x="531" y="238" key="FileChooserDialogImpl" timestamp="1589397294879">
+    <state x="250" y="79" key="CommitChangelistDialog2/0.0.1500.960@0.0.1500.960" timestamp="1589446669756" />
+    <state x="531" y="238" key="FileChooserDialogImpl" timestamp="1589446801490">
       <screen x="0" y="0" width="1500" height="960" />
     </state>
-    <state x="531" y="238" key="FileChooserDialogImpl/0.0.1500.960@0.0.1500.960" timestamp="1589397294879" />
+    <state x="531" y="238" key="FileChooserDialogImpl/0.0.1500.960@0.0.1500.960" timestamp="1589446801490" />
+    <state x="606" y="379" key="Github.ShareDialog" timestamp="1589398359435">
+      <screen x="0" y="0" width="1500" height="960" />
+    </state>
+    <state x="606" y="379" key="Github.ShareDialog/0.0.1500.960@0.0.1500.960" timestamp="1589398359435" />
     <state width="1458" height="255" key="GridCell.Tab.0.bottom" timestamp="1589298468574">
       <screen x="0" y="0" width="1500" height="960" />
     </state>
@@ -207,14 +246,18 @@
       <screen x="0" y="0" width="1500" height="960" />
     </state>
     <state x="444" y="194" key="RollbackChangesDialog/0.0.1500.960@0.0.1500.960" timestamp="1589313472398" />
-    <state x="254" y="117" key="SettingsEditor" timestamp="1589397047527">
+    <state x="254" y="117" key="SettingsEditor" timestamp="1589446352790">
       <screen x="0" y="0" width="1500" height="960" />
     </state>
-    <state x="254" y="117" key="SettingsEditor/0.0.1500.960@0.0.1500.960" timestamp="1589397047527" />
-    <state x="343" y="216" key="Vcs.Push.Dialog.v2" timestamp="1589397192551">
+    <state x="254" y="117" key="SettingsEditor/0.0.1500.960@0.0.1500.960" timestamp="1589446352790" />
+    <state x="581" y="353" key="VCS.EditChangelistDialog" timestamp="1589446524494">
       <screen x="0" y="0" width="1500" height="960" />
     </state>
-    <state x="343" y="216" key="Vcs.Push.Dialog.v2/0.0.1500.960@0.0.1500.960" timestamp="1589397192551" />
+    <state x="581" y="353" key="VCS.EditChangelistDialog/0.0.1500.960@0.0.1500.960" timestamp="1589446524494" />
+    <state x="343" y="216" key="Vcs.Push.Dialog.v2" timestamp="1589397442204">
+      <screen x="0" y="0" width="1500" height="960" />
+    </state>
+    <state x="343" y="216" key="Vcs.Push.Dialog.v2/0.0.1500.960@0.0.1500.960" timestamp="1589397442204" />
     <state x="458" y="308" key="com.intellij.ide.util.TipDialog" timestamp="1589361099566">
       <screen x="0" y="0" width="1500" height="960" />
     </state>

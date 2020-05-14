@@ -8,8 +8,9 @@ import "react-big-calendar/lib/css/react-big-calendar.css";
 import 'moment/locale/de';
 import FetchDataService from "./FetchDataService";
 import CreateDataService from "./CreateDataService";
-import { useAuth0 } from "../react-auth0-spa";
+import {Auth0Context, useAuth0} from "../react-auth0-spa";
 import Axios from "axios";
+import DeleteDataService from "./DeleteDataService";
 
 const localizer = momentLocalizer(moment);
 moment.locale('de');
@@ -19,6 +20,8 @@ const propTypes = {};
 class MyCalendar extends Component {
     fetchDataService = new FetchDataService();
     createDataService = new CreateDataService();
+    deleteDataService = new DeleteDataService();
+    static contextType = Auth0Context;
 
     constructor(props) {
         super(props);
@@ -50,15 +53,13 @@ class MyCalendar extends Component {
 //Clicking an existing event allows you to remove it
 onSelectEvent(pEvent) {
     const r = window.confirm("Would you like to remove this event?");
-    if(r === true){
-
-        this.setState((prevState, props) => {
-            const events = [prevState.events];
-            const idx = events.indexOf(pEvent);
-            events.splice(idx, 1);
-            Axios.delete()
-            return { events };
-        });
+    console.log(pEvent);
+    let userIdFromEvent = pEvent.id.split("-")[1];
+    let lectureId = pEvent.id.split("-")[0];
+    if (userIdFromEvent===this.state.userId){
+        if(r === true){
+            this.deleteDataService.deleteLecture(lectureId);
+        }
     }
 }
 
@@ -67,6 +68,10 @@ onSelectEvent(pEvent) {
 //-----------------------------------------------------------------------------------------------------
 
      componentDidMount() {
+        let context = this.context;
+        this.setState({
+            userId: context.user.sub
+        });
         this.fetchDataService.fetchTimeslotId()
             .then(timeslotId => {
                 this.fetchDataService.fetchLectureByTimeslotId(timeslotId)

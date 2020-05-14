@@ -27,7 +27,7 @@ class FetchDataService extends Component {
                         start: item.startTime,
                         end: item.endTime,
                         desc: item.course,
-                        id: item.lecturerID
+                        id: item.id + "-" + item.lecturerID
                     };
                 })
             })

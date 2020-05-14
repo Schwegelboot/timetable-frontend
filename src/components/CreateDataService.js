@@ -10,7 +10,7 @@ class CreateDataService extends Component {
     async createLecture(title, start, end, userId) {
         return Axios.post("http://localhost:8080/lecture/create", {
             name: title,
-            lecturerID: userId,    // userId,
+            lecturerID: userId,
             course: "WWI14B4",
             location: "EG",
             startTime: moment.utc(start).toDate(),   //"2020-06-13T09:30:00.000Z",
