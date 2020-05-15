@@ -7,7 +7,14 @@ import 'bulma/css/bulma.css';
 
 
 const NavBar = () => {
-    const { isAuthenticated, loginWithRedirect, logout } = useAuth0();
+    const { isAuthenticated, loginWithRedirect, logout, user } = useAuth0();
+    let hasRole = false;
+    if (isAuthenticated){
+        let adminUser= "5eb71511d0fa1e0bfeee3e74";
+        if (user.sub.split("|")[1]===adminUser){
+            hasRole = true;
+        }
+    }
 
     return (
         <div>
@@ -37,7 +44,7 @@ const NavBar = () => {
                             <Link to="/mycalendar">Kalender</Link>
                         </a>
                         <a className="navbar-item">
-                            <Link to="/eingabe">Eingabe</Link>
+                            {hasRole && (<Link to="/eingabe">Eingabe</Link>)}
                         </a>
                     </div>
                 </nav>

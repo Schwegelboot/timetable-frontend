@@ -1,47 +1,51 @@
-import React, {Component} from 'react';
-import { useForm } from 'react-hook-form';
-import "../App.css";
-import Axios from "axios";
-import moment from "moment";
-
-//class Eingabe extends Component{
-
-class CreateTimeslotService extends Component {
-    async createTimeslot(name, course, isActive, startTime, endTime) {
-        return Axios.post("http://localhost:8080/timeslot/create", {
-            name: name,
-            course: course,
-            isActive: isActive,
-            startTime: startTime,   //"2020-06-13T09:30:00.000Z",
-            endTime: endTime, //"2020-06-13T10:30:00.000Z",
-        }).then(async (response) => {
-            console.log(response.data)
-        }).catch(error => {
-            console.log(error);
-        });
-    };
-}
 
 
+import * as React from "react";
+import CreateTimeslotService from "./CreateTimeslotService";
 
-function Eingabe() {
-    const { register, handleSubmit,watch, errors } = useForm();
-    const onSubmit = data => {console.log(data);};
-    console.log(errors);
-    console.log(watch("example")); // you can watch individual input by pass the name of the input
+class Eingabe extends React.Component {
+    createTimeSlotService = new CreateTimeslotService();
 
+    constructor(props) {
+        super(props);
+        this.state = {value: ''};
+        this.handleChange = this.handleChange.bind(this);
+        this.handleSubmit = this.handleSubmit.bind(this);
+    }
 
-    return (
-        <form onSubmit={handleSubmit(onSubmit)}>
-            <input type="text" placeholder="name" name="name" ref={register({required: true})} />
-            <input type="text" placeholder="course" name="course" ref={register({required: true})} />
-            <input type="checkbox" placeholder="isActive" name="isActive" ref={register} />
-            <input type="datetime" placeholder="startTime" name="startTime" ref={register({required: true})} />
-            <input type="datetime" placeholder="endTime" name="endTime" ref={register({required: true})} />
+    handleChange(event) {
+        this.setState({value: event.target.value});
+    }
 
-            <input type="submit" />
-        </form>
+    async handleSubmit(event) {
+        alert('A name was submitted: ' + this.state.value);
+        event.preventDefault();
+        console.log(event.target.value);
+        console.log(event.target.value);
+        console.log(event.target.value);
+        let name = event.target.elements.name.value;
+        let course = event.target.elements.course.value;
+        let isActive = false;
+        if (event.target.elements.isActive.value==="on"){
+            isActive = true;
+        }
+        let startTime = event.target.elements.startTime.value;
+        let endTime = event.target.elements.endTime.value;
+        await this.createTimeSlotService.createTimeslot(name, course, isActive, startTime, endTime);
+    }
+
+    render() {
+        return (
+            <form onSubmit={this.handleSubmit}>
+                <input type="text" placeholder="name" name="name" />
+                <input type="text" placeholder="course" name="course"  />
+                <input type="checkbox" placeholder="isActive" name="isActive"  />
+                <input type="datetime" placeholder="startTime" name="startTime"/>
+                <input type="datetime" placeholder="endTime" name="endTime"/>
+                <input type="submit" />
+            </form>
         );
-
+    }
 }
+
 export default Eingabe;

@@ -6,12 +6,6 @@ import {Calendar, momentLocalizer} from "react-big-calendar";
 const localizer = momentLocalizer(moment);
 moment.locale('de');
 
-
-
-
-
-
-
 class CreateDataService extends Component {
     async createLecture(title, start, end, userId) {
         return Axios.post("http://localhost:8080/lecture/create", {

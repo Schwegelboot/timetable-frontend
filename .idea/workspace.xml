@@ -2,16 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="260478f3-3ee2-48ff-8667-8cd17fdaa5da" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/CreateTimeslotService.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/CreateDataService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CreateDataService.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Eingabe.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Eingabe.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/MyCalendar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MyCalendar.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/NavBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavBar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,7 +106,8 @@
       <workItem from="1589455212935" duration="1402000" />
       <workItem from="1589457601862" duration="21036000" />
       <workItem from="1589485521155" duration="3022000" />
-      <workItem from="1589533747916" duration="3990000" />
+      <workItem from="1589533747916" duration="11910000" />
+      <workItem from="1589552627344" duration="2181000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1589396984455</created>
@@ -152,7 +151,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589485465083</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Commit aktuell">
+      <created>1589541858583</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1589541858583</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -183,7 +189,8 @@
     <MESSAGE value="Initial Commit" />
     <MESSAGE value="Updated Commit" />
     <MESSAGE value="Commit Logo" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit Logo" />
+    <MESSAGE value="Commit aktuell" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit aktuell" />
   </component>
   <component name="WindowStateProjectService">
     <state x="343" y="142" key="#ESLint" timestamp="1589308645934">
@@ -206,10 +213,10 @@
       <screen x="0" y="0" width="1500" height="960" />
     </state>
     <state x="481" y="230" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1500.960@0.0.1500.960" timestamp="1589454611625" />
-    <state x="250" y="79" key="CommitChangelistDialog2" timestamp="1589485463330">
+    <state x="250" y="79" key="CommitChangelistDialog2" timestamp="1589541854214">
       <screen x="0" y="0" width="1500" height="960" />
     </state>
-    <state x="250" y="79" key="CommitChangelistDialog2/0.0.1500.960@0.0.1500.960" timestamp="1589485463330" />
+    <state x="250" y="79" key="CommitChangelistDialog2/0.0.1500.960@0.0.1500.960" timestamp="1589541854214" />
     <state x="93" y="93" width="1313" height="773" key="DiffContextDialog" timestamp="1589455010941">
       <screen x="0" y="0" width="1500" height="960" />
     </state>
@@ -222,22 +229,22 @@
       <screen x="0" y="0" width="1500" height="960" />
     </state>
     <state x="606" y="379" key="Github.ShareDialog/0.0.1500.960@0.0.1500.960" timestamp="1589450082009" />
-    <state width="707" height="255" key="GridCell.Tab.0.bottom" timestamp="1589538846478">
+    <state width="1458" height="119" key="GridCell.Tab.0.bottom" timestamp="1589552461922">
       <screen x="0" y="0" width="1500" height="960" />
     </state>
-    <state width="707" height="255" key="GridCell.Tab.0.bottom/0.0.1500.960@0.0.1500.960" timestamp="1589538846478" />
-    <state width="707" height="255" key="GridCell.Tab.0.center" timestamp="1589538846478">
+    <state width="1458" height="119" key="GridCell.Tab.0.bottom/0.0.1500.960@0.0.1500.960" timestamp="1589552461922" />
+    <state width="1458" height="119" key="GridCell.Tab.0.center" timestamp="1589552461922">
       <screen x="0" y="0" width="1500" height="960" />
     </state>
-    <state width="707" height="255" key="GridCell.Tab.0.center/0.0.1500.960@0.0.1500.960" timestamp="1589538846478" />
-    <state width="707" height="255" key="GridCell.Tab.0.left" timestamp="1589538846477">
+    <state width="1458" height="119" key="GridCell.Tab.0.center/0.0.1500.960@0.0.1500.960" timestamp="1589552461922" />
+    <state width="1458" height="119" key="GridCell.Tab.0.left" timestamp="1589552461921">
       <screen x="0" y="0" width="1500" height="960" />
     </state>
-    <state width="707" height="255" key="GridCell.Tab.0.left/0.0.1500.960@0.0.1500.960" timestamp="1589538846477" />
-    <state width="707" height="255" key="GridCell.Tab.0.right" timestamp="1589538846478">
+    <state width="1458" height="119" key="GridCell.Tab.0.left/0.0.1500.960@0.0.1500.960" timestamp="1589552461921" />
+    <state width="1458" height="119" key="GridCell.Tab.0.right" timestamp="1589552461922">
       <screen x="0" y="0" width="1500" height="960" />
     </state>
-    <state width="707" height="255" key="GridCell.Tab.0.right/0.0.1500.960@0.0.1500.960" timestamp="1589538846478" />
+    <state width="1458" height="119" key="GridCell.Tab.0.right/0.0.1500.960@0.0.1500.960" timestamp="1589552461922" />
     <state width="1458" height="316" key="GridCell.Tab.1.bottom" timestamp="1589101886633">
       <screen x="0" y="0" width="1500" height="960" />
     </state>
@@ -302,10 +309,10 @@
       <screen x="0" y="0" width="1500" height="960" />
     </state>
     <state x="581" y="353" key="VCS.EditChangelistDialog/0.0.1500.960@0.0.1500.960" timestamp="1589446524494" />
-    <state x="343" y="216" key="Vcs.Push.Dialog.v2" timestamp="1589485467994">
+    <state x="343" y="216" key="Vcs.Push.Dialog.v2" timestamp="1589541884497">
       <screen x="0" y="0" width="1500" height="960" />
     </state>
-    <state x="343" y="216" key="Vcs.Push.Dialog.v2/0.0.1500.960@0.0.1500.960" timestamp="1589485467994" />
+    <state x="343" y="216" key="Vcs.Push.Dialog.v2/0.0.1500.960@0.0.1500.960" timestamp="1589541884497" />
     <state x="458" y="308" key="com.intellij.ide.util.TipDialog" timestamp="1589533761537">
       <screen x="0" y="0" width="1500" height="960" />
     </state>
@@ -314,10 +321,10 @@
       <screen x="0" y="0" width="1500" height="960" />
     </state>
     <state x="560" y="399" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1500.960@0.0.1500.960" timestamp="1589317509996" />
-    <state x="453" y="113" width="642" height="732" key="find.popup" timestamp="1589457001347">
+    <state x="453" y="113" width="642" height="732" key="find.popup" timestamp="1589552909566">
       <screen x="0" y="0" width="1500" height="960" />
     </state>
-    <state x="453" y="113" width="642" height="732" key="find.popup/0.0.1500.960@0.0.1500.960" timestamp="1589457001347" />
+    <state x="453" y="113" width="642" height="732" key="find.popup/0.0.1500.960@0.0.1500.960" timestamp="1589552909566" />
     <state x="175" y="208" key="new project wizard" timestamp="1589206734843">
       <screen x="0" y="0" width="1500" height="960" />
     </state>

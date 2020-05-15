@@ -19,16 +19,12 @@ import MyCalendar from "./components/MyCalendar"
 import 'bulma/css/bulma.css';
 import Eingabe from "./components/Eingabe";
 
-//-------------------------------------------------------------------------------
-
 function App() {
     const { loading, loginWithRedirect, isAuthenticated } = useAuth0();
 
     if (loading) {
         return <div>Loading..</div>;
     }
-
-
     return (
         <div className="App">
             {/* Don't forget to include the history module */}
@@ -45,55 +41,13 @@ function App() {
 
                 <Switch>
                     <PrivateRoute path="/mycalendar" component={MyCalendar}/>
-
                     <Route  path="/" exact />
                     <PrivateRoute path="/profile" component={Profile} />
                     <PrivateRoute path="/eingabe" component={Eingabe}/>
                 </Switch>
-
             </Router>
-
         </div>
     );
 }
 
 export default App;
-
-//-------------------------------------------------------------------------------------------
-/*
-
-const localizer = momentLocalizer(moment);
-moment.locale('de');
-
-
-class App extends Component {
-  state = {
-    events: [
-      {
-        start: moment().toDate(),
-        end: moment()
-            .add(1, "days")
-            .toDate(),
-        title: "Some title"
-      }
-    ]
-  };
-
-  render() {
-    return (
-        <div className="App">
-          <button onClick={() => this.handleLogoutClick()}>Logout</button>
-          <Calendar
-              localizer={localizer}
-              defaultDate={new Date()}
-              defaultView="month"
-              events={this.state.events}
-              style={{ height: "100vh" }}
-          />
-        </div>
-    );
-  }
-}
-
-export default App;
-*/
