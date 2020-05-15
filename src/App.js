@@ -15,7 +15,6 @@ import Profile from "./components/Profile";
 // src/App.js
 import NavBar from "./components/NavBar";
 import { useAuth0 } from "./react-auth0-spa";
-import CustomCalendar from "./components/CustomCalendar";
 import MyCalendar from "./components/MyCalendar"
 import 'bulma/css/bulma.css';
 import Eingabe from "./components/Eingabe";
@@ -29,22 +28,27 @@ function App() {
         return <div>Loading..</div>;
     }
 
+
     return (
         <div className="App">
             {/* Don't forget to include the history module */}
             <Router history={history}>
                 <header>
-                    <NavBar />
+                    <NavBar  />
                 </header>
 
+                <div >
                     {!isAuthenticated && (
-                        <button className="button is-danger" onClick={() => loginWithRedirect({})}>Log in</button>
+                        <button className="button is-primary is-large is-fullwidth" onClick={() => loginWithRedirect({})}>Log in</button>
                     )}
+                </div>
+
                 <Switch>
+                    <PrivateRoute path="/mycalendar" component={MyCalendar}/>
+
                     <Route  path="/" exact />
                     <PrivateRoute path="/profile" component={Profile} />
-                    <PrivateRoute path="/mycalendar" component={MyCalendar}/>
-                    <Route path="/eingabe" component={Eingabe}/>
+                    <PrivateRoute path="/eingabe" component={Eingabe}/>
                 </Switch>
 
             </Router>

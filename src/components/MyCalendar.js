@@ -23,6 +23,7 @@ class MyCalendar extends Component {
     deleteDataService = new DeleteDataService();
     static contextType = Auth0Context;
 
+
     constructor(props) {
         super(props);
         this.state = {
@@ -90,6 +91,7 @@ onSelectEvent(pEvent) {
             });
     }
 
+
     render() {
         const {cal_events} = this.state;
         return (
@@ -97,6 +99,7 @@ onSelectEvent(pEvent) {
                 <p>
                     Timeslot: {this.state.timeslotId}
                 </p>
+
                 <div style={{height: '500pt'}}>
                     <Calendar
                         events={cal_events}
@@ -105,6 +108,7 @@ onSelectEvent(pEvent) {
                         endAccessor="end"
                         defaultDate={moment().toDate()}
                         localizer={localizer}
+                        culture='de'
                         components={{
                             event: Event,
                             agenda: {
